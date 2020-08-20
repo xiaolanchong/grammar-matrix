@@ -1,0 +1,25 @@
+
+h3 {
+  margin-top: 0.75em !important;
+  margin-bottom: 0.75em !important;
+}
+
+.row {
+  margin-top: 0.5em;
+}
+
+.row:nth-child(even) { 
+  background-color: #eeeeee;
+}
+
+.text-expr {
+    color: #dc3545;
+}
+
+.hidden {
+  color: transparent;
+}
+
+.hidden > * {
+  color: transparent;
+}
