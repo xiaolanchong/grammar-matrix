@@ -1,22 +1,16 @@
 import React from 'react'
-//import logo from './logo.svg';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import './App.css'
 import NavBar from './NavBar.js'
 import MainPage from './MainPage.js'
-//import ExprPage from './ExprPage.js'
-//import TagPage from './TagPage.js'
 
 
-function Error() {
-   return (
-            <div className='text-center'>
-               <h1>404</h1>
-               <h2>Нет такой страницы</h2>
-            </div>
-          );
-}
+const Error = () =>
+  <div className='text-center'>
+     <h1>404</h1>
+     <h2>Нет такой страницы</h2>
+  </div>
 
 function App() {
   return (
@@ -35,7 +29,7 @@ function App() {
          <Route component={Error}/>
       </Switch>
       </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App

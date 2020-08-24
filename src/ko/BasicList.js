@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
-import {IntLevelIcon} from './Utils.js'
-import {Translation, Example, Expr, Hilite, ModeControls, Mode} from './Ui.js'
-import './BasicList.css'
+import {IntLevelIcon} from '../Utils.js'
+import {Translation, Example, Expr, Hilite, ModeControls, Mode} from '../Ui.js'
+import '../Ui.css'
 
 
 const Basic = ({ mode }) => {
@@ -11,7 +11,9 @@ const Basic = ({ mode }) => {
       <div className='container'>
       
       <h2>Базовая грамматика</h2>
+
       На основе <a href='https://sayhikorean.blogspot.com/2018/10/korean-grammar-in-use-beginner.html'>"Korean Grammar in Use"</a>.
+      
       <h3>1. 이다 To be</h3>
         <div className="row">
           <strong>веж. офиц</strong>
@@ -226,6 +228,11 @@ const Basic = ({ mode }) => {
           <Example mode={mode}>갔어요</Example>
           <Translation mode={mode}>Шел</Translation>
         </div>
+        <div className="row">
+          <Expr>Связка после гласной = слияние -> 였다 </Expr>
+          <Example mode={mode}>의사였다</Example>
+          <Translation mode={mode}>(Это) был врач</Translation>
+        </div>
 
         <h3>V-(으)ㄹ 거예요 будущее время</h3>
         <div className="row">
@@ -359,7 +366,7 @@ const Basic = ({ mode }) => {
         </div>
 
         <div className="row">
-          <IntLevelIcon /><Expr>Влияние на объект</Expr>
+          <Expr><IntLevelIcon />Влияние на объект</Expr>
           <Example mode={mode}>쓰다 남은 물은 화분을 줘요 <span className='text-warning'>(не 에)</span></Example>
           <Translation mode={mode}>Остаток воды вылил в горшок</Translation>
         </div>
@@ -367,7 +374,7 @@ const Basic = ({ mode }) => {
         <div className="row">
           <Expr>C 오다 и 가다/конечная точка</Expr>
           <Example mode={mode}>채소를 사러 시장을 가야 한다</Example>
-          <Translation mode={mode}>Пойти на рынок купить овощи</Translation>
+          <Translation mode={mode}>Надо пойти на рынок купить овощи</Translation>
         </div>
 
         <div className="row">
@@ -377,22 +384,22 @@ const Basic = ({ mode }) => {
         </div>
 
         <div className="row">
-          <IntLevelIcon /><Expr>Кол-во действия, времени при непереходном глаголе</Expr>
+          <Expr><IntLevelIcon />Кол-во действия, времени при непереходном глаголе</Expr>
           <Example mode={mode}>몸살이 나서 열 시간을 누워 있었다</Example>
           <Translation mode={mode}>Устал, провалялся 10 часов</Translation>
         </div>
 
         <div className="row">
-          <IntLevelIcon /><Expr>Усиление</Expr>
+          <Expr><IntLevelIcon />Усиление</Expr>
           <Example mode={mode}>승규는 잃어버린 열쇠를 아직도 찾지를 못했다</Example>
           <Translation mode={mode}>Сынгю все никак не находит потерянный ключ</Translation>
         </div>
 
-        <h3>N와/과</h3>
+        <h3>N와/과 (официальный, литературный)</h3>
         <div className="row">
           <Expr>Критерий, стандарт сравнения</Expr>
           <Example mode={mode}>미국은 우리나라와 달리 6월에 졸업식을 한다.</Example>
-          <Translation mode={mode}>В США в отличии от нашей Кореи выпускные отличаются на 6 месяцев</Translation>
+          <Translation mode={mode}>В США в отличии от нашей Кореи выпускные проводятся в июне.</Translation>
         </div>
 
         <div className="row">
@@ -401,11 +408,11 @@ const Basic = ({ mode }) => {
           <Translation mode={mode}>Я решил учиться плаванию вместе с другом</Translation>
         </div>
 
-        <h3>N하고</h3>
+        <h3>N하고 (разговорный)</h3>
         <div className="row">
           <Expr>Критерий, стандарт сравнения</Expr>
           <Example mode={mode}>준하는 어느덧 아버지하고 키가 비슷해졌다.</Example>
-          <Translation mode={mode}>Джуна неожиданно одного роста с отцом</Translation>
+          <Translation mode={mode}>Джуна неожиданно стала одного роста с отцом</Translation>
         </div>
 
         <div className="row">
@@ -414,7 +421,7 @@ const Basic = ({ mode }) => {
           <Translation mode={mode}>Сынгю играл в игру и повздорил с мл. братом</Translation>
         </div>
 
-        <h3>N(이)랑</h3>
+        <h3>N(이)랑 (неформальный)</h3>
         <div className="row">
           <Expr>Критерий, стандарт сравнения</Expr>
           <Example mode={mode}>내 모자는 네 모자랑 사이즈가 같다</Example>
@@ -492,7 +499,7 @@ const Basic = ({ mode }) => {
         <div className="row">
           <Expr>Частота (раз за промежуток времени), доли, части.</Expr>
           <Example mode={mode}>이 잡지는 1년에 4번 발행된다</Example>
-          <Translation mode={mode}>Журнал издается 4 раз за год.</Translation>
+          <Translation mode={mode}>Этот журнал издается 4 раз за год.</Translation>
         </div>
 
         <div className="row">
@@ -520,7 +527,7 @@ const Basic = ({ mode }) => {
         </div>
 
         <div className="row">
-          <Expr>Причина физического, психического состояния (сравнить с 로).</Expr>
+          <Expr>Причина физического, психического состояния, слабая причина (сравнить с 로).</Expr>
           <Example mode={mode}>더위에 시달리다</Example>
           <Translation mode={mode}>Страдать от жары.</Translation>
         </div>
@@ -571,13 +578,13 @@ const Basic = ({ mode }) => {
         <h3><IntLevelIcon/>서</h3>
         <div className="row">
           <Expr>Сокращенное 에서</Expr>
-          <Example mode={mode}>?</Example>
-          <Translation mode={mode}>?</Translation>
+          <Example mode={mode}>그는 부산<Hilite>서</Hilite> 왔다.</Example>
+          <Translation mode={mode}>Он из Пусана.</Translation>
         </div>
         <div className="row">
           <Expr>Уселение</Expr>
-          <Example mode={mode}>?</Example>
-          <Translation mode={mode}>?</Translation>
+          <Example mode={mode}>숙제를 다하고<Hilite>서</Hilite> 잠자리에 들었다</Example>
+          <Translation mode={mode}>Закончив (только) д/з, пошел спать.</Translation>
         </div>
 
         <h3>까지</h3>
@@ -590,7 +597,7 @@ const Basic = ({ mode }) => {
         <div className="row">
           <Expr><IntLevelIcon/>Степень, вплоть до, даже</Expr>
           <Example mode={mode}>최근 노트북 컴퓨터는 가볍고 얇아진 데다 성능까지 좋아졌다</Example>
-          <Translation mode={mode}>Сегодняшние ноутбуки легкие, тонкие, и даже функциональные</Translation>
+          <Translation mode={mode}>Сегодняшние ноутбуки легкие, стали тонкими, и к тому же даже функциональные</Translation>
         </div>
 
         <div className="row">
@@ -658,167 +665,180 @@ const Basic = ({ mode }) => {
         </div>
 
         <h3>N에게서</h3>
+        <div className="row">
+          <Expr>Одушевленный ысточник получения объекта (материальный и нематериальный), обстоятельство "от"</Expr>
+          <Example mode={mode}>나는 오랜만에 친구<Hilite>에게서</Hilite> 편지를 받고 매우 기뻤다.</Example>
+          <Translation mode={mode}>Очень рад был получить письмо от друга после продолжительного времени.</Translation>
+        </div>
+        
         <h3>N한테서</h3>
+        <div className="row">
+          <Expr>Разговорный 에게서</Expr>
+          <Example mode={mode}>그 소문은 누구<Hilite>한테서</Hilite> 들었어?</Example>
+          <Translation mode={mode}>От кого слышал эту новость?</Translation>
+        </div>
+        
+        
         <h3>N도</h3>
         <div className="row">
           <Expr>Тоже</Expr>
-          <Example mode={mode}>나∼ 그를 알고 있다</Example>
+          <Example mode={mode}>나<Hilite>도</Hilite> 그를 알고 있다</Example>
           <Translation mode={mode}>Я тоже знаю его.</Translation>
         </div>
 
         <div className="row">
-          <Expr>Ни это, ни то (с отрицанием)</Expr>
-          <Example mode={mode}>그것은 이득∼ 해악∼ 되지 않는다</Example>
-          <Translation mode={mode}>Это не дает пользы и не вредит.</Translation>
+          <Expr>Ни это, ни то (сущ-е, с отрицанием)</Expr>
+          <Example mode={mode}>그것은 이득<Hilite>도</Hilite> 해악<Hilite>도</Hilite> 되지 않는다</Example>
+          <Translation mode={mode}>Это не станет ни пользой, ни вредом.</Translation>
         </div>
 
         <div className="row">
-          <Expr>Ни это, ни то (с отрицанием)</Expr>
-          <Example mode={mode}>그는 프랑스어를 읽지∼ 쓰지∼ 말하지∼ 못한다</Example>
+          <Expr>Ни это, ни то (глаголы, с отрицанием)</Expr>
+          <Example mode={mode}>그는 프랑스어를 읽지<Hilite>도</Hilite> 쓰지<Hilite>도</Hilite> 말하지<Hilite>도</Hilite> 못한다</Example>
           <Translation mode={mode}>Он не может ни читать, ни писать, ни говорить по-французски.</Translation>
         </div>
 
         <div className="row">
-          <Expr>И то, и то </Expr>
-          <Example mode={mode}>그녀는 똑똑하기∼ 하고 친절하기∼ 하다</Example>
+          <Expr>И то, и то (прил-е) </Expr>
+          <Example mode={mode}>그녀는 똑똑하기<Hilite>도</Hilite> 하고 친절하기<Hilite>도</Hilite> 하다</Example>
           <Translation mode={mode}>Она и умная, и добрая</Translation>
         </div>
 
         <div className="row">
           <Expr>Даже (крайняя степень)</Expr>
-          <Example mode={mode}>한 사람∼ 그를 구해 주려고 하는 사람이 없었다</Example>
+          <Example mode={mode}>한 사람<Hilite>도</Hilite> 그를 구해 주려고 하는 사람이 없었다</Example>
           <Translation mode={mode}>Не было никого, кто помог ему.</Translation>
         </div>
 
         <div className="row">
           <Expr>Даже если (котраст)</Expr>
-          <Example mode={mode}>적어∼, 많아∼</Example>
-          <Translation mode={mode}>по меньшей мере, по большому</Translation>
+          <Example mode={mode}>적어<Hilite>도</Hilite>, 많아<Hilite>도</Hilite></Example>
+          <Translation mode={mode}>По меньшей мере; в крайнем случае</Translation>
         </div>
 
         <h3>N만</h3>
         <div className="row">
           <Expr>Только; лишь, минимум</Expr>
-          <Example mode={mode}>너∼이 이것을 할 수 있다</Example>
+          <Example mode={mode}>너<Hilite>도</Hilite>이 이것을 할 수 있다</Example>
           <Translation mode={mode}>Только ты можешь сделать это.</Translation>
         </div>
 
         <h3>N밖에</h3>
         <div className="row">
           <Expr>Ничего кроме (всегда с отрицанием)</Expr>
-          <Example mode={mode}>냉장고에 우유밖에 없어요</Example>
+          <Example mode={mode}>냉장고에 우유<Hilite>밖에</Hilite> 없어요</Example>
           <Translation mode={mode}>В холодильнике только молоко</Translation>
         </div>
 
         <h3>N(으)로</h3>
         <div className="row">
           <Expr>Способ</Expr>
-          <Example mode={mode}>영어로 이야기하다</Example>
-          <Translation mode={mode}>говорить на английском.</Translation>
+          <Example mode={mode}>영어<Hilite>로</Hilite> 이야기하다</Example>
+          <Translation mode={mode}>Говорить на английском.</Translation>
         </div>
 
         <div className="row">
           <Expr>Средство, инструмент</Expr>
-          <Example mode={mode}>내 시계로 3시</Example>
+          <Example mode={mode}>내 시계<Hilite>로</Hilite> 3시</Example>
           <Translation mode={mode}>По моим часам 3ч.</Translation>
         </div>
 
         <div className="row">
           <Expr>Исходный материал</Expr>
-          <Example mode={mode}>나무로 만든 상자</Example>
-          <Translation mode={mode}>Ящик из дерева.</Translation>
+          <Example mode={mode}>나무<Hilite>로</Hilite> 만든 상자</Example>
+          <Translation mode={mode}>Ящик, сделанный из дерева.</Translation>
         </div>
 
         <div className="row">
           <Expr>Конечное направление (сравнить с 에)</Expr>
-          <Example mode={mode}>교회로 들어오다</Example>
+          <Example mode={mode}>교회<Hilite>로</Hilite> 들어오다</Example>
           <Translation mode={mode}>Войти в церковь.</Translation>
         </div>
 
         <div className="row">
           <Expr>Конечная дата</Expr>
-          <Example mode={mode}>내일로 원서 접수가 마감된다</Example>
+          <Example mode={mode}>내일<Hilite>로</Hilite> 원서 접수가 마감된다</Example>
           <Translation mode={mode}>Крайний срок для заявок - завтра.</Translation>
         </div>
 
         <div className="row">
           <Expr>Конечное состояние</Expr>
-          <Example mode={mode}>우리말을 영어로 번역하다</Example>
+          <Example mode={mode}>우리말을 영어<Hilite>로</Hilite> 번역하다</Example>
           <Translation mode={mode}>Перевести корейский на английский</Translation>
         </div>
 
         <div className="row">
           <Expr>Причина</Expr>
-          <Example mode={mode}>그는 과로로 병이 났다</Example>
+          <Example mode={mode}>그는 과로<Hilite>로</Hilite> 병이 났다</Example>
           <Translation mode={mode}>Он заболел от переработки.</Translation>
         </div>
 
         <h3>(이)나</h3>
         <div className="row">
           <Expr>Или (с сущ и мест)</Expr>
-          <Example mode={mode}>아침에 빵이나 밥을 먹어요.</Example>
+          <Example mode={mode}>아침에 빵<Hilite>이나</Hilite> 밥을 먹어요.</Example>
           <Translation mode={mode}>По утром ем хлеб или рис</Translation>
         </div>
 
         <div className="row">
           <Expr>Примерно, что-то такое</Expr>
-          <Example mode={mode}>친구를 두 시간이나 기다렸어요.</Example>
+          <Example mode={mode}>친구를 두 시간<Hilite>이나</Hilite> 기다렸어요.</Example>
           <Translation mode={mode}>Ждал друга часа 2</Translation>
         </div>
 
         <h3>Другие частицы</h3>
         <div className="row">
           <Expr>N쯤 около</Expr>
-          <Example mode={mode}>파티에 20명쯤 왔어요.</Example>
+          <Example mode={mode}>파티에 20명<Hilite>쯤</Hilite> 왔어요.</Example>
           <Translation mode={mode}>На вечеринку пришло около 20 человек</Translation>
         </div>
 
         <div className="row">
           <Expr>N처럼 словно, как</Expr>
-          <Example mode={mode}>가수처럼 노래를 잘 불러요</Example>
+          <Example mode={mode}>가수<Hilite>처럼</Hilite> 노래를 잘 불러요</Example>
           <Translation mode={mode}>Поет хорошо, словно певец.</Translation>
         </div>
 
         <div className="row">
           <Expr>N같이 словно, как (не "вместе")</Expr>
-          <Example mode={mode}>하영 씨는 천사같이 착해요</Example>
+          <Example mode={mode}>하영 씨는 천사<Hilite>같이</Hilite> 착해요</Example>
           <Translation mode={mode}>Хаён добра словно ангел.</Translation>
         </div>
 
         <div className="row">
           <Expr>N보다 чем (критерий сравнения)</Expr>
-          <Example mode={mode}>비행기가 기차보다 빨라요</Example>
+          <Example mode={mode}>비행기가 기차<Hilite>보다</Hilite> 빨라요</Example>
           <Translation mode={mode}>Самолет быстрее поезда.</Translation>
         </div>
 
         <div className="row">
           <Expr>N마다 каждый</Expr>
-          <Example mode={mode}>웨슬리 씨는 일요일마다 교회에 가요</Example>
+          <Example mode={mode}>웨슬리 씨는 일요일<Hilite>마다</Hilite> 교회에 가요</Example>
           <Translation mode={mode}>Уэсли ходит каждое воскресенье в церковь.</Translation>
         </div>
 
         <h3>4. Перечисление и контраст</h3>
         <div className="row">
           <Expr>A/V-고 соединительный суффикс для глаголов, при-х, время нельзя</Expr>
-          <Example mode={mode}>캐럴 씨는 키가 크고 날씬해요</Example>
+          <Example mode={mode}>캐럴 씨는 키가 크<Hilite>고</Hilite> 날씬해요</Example>
           <Translation mode={mode}>Кэрол высокая и стройная</Translation>
         </div>
 
         <div className="row">
           <Expr>A/V-거나 или, альтернатива, суффикс</Expr>
-          <Example mode={mode}>아침에 빵을 먹거나 우유를 마셔요</Example>
+          <Example mode={mode}>아침에 빵을 먹<Hilite>거나</Hilite> 우유를 마셔요</Example>
           <Translation mode={mode}>На завтрак ем хлеб или пью молоко.</Translation>
         </div>
 
         <div className="row">
           <Expr>A/V-지만 противительный суффикс</Expr>
-          <Example mode={mode}>한국말은 어렵지만 재미있어요</Example>
+          <Example mode={mode}>한국말은 어렵<Hilite>지만</Hilite> 재미있어요</Example>
           <Translation mode={mode}>Корейский трудной, но интересный.</Translation>
         </div>
 
         <div className="row">
           <Expr>A/V-(으)ㄴ/는데 "хотя", "но" (не контекст для 2-й части)</Expr>
-          <Example mode={mode}>낮에는 차가 많은데 밤에는 차가 없어요</Example>
+          <Example mode={mode}>낮에는 차가 많<Hilite>은데</Hilite> 밤에는 차가 없어요</Example>
           <Translation mode={mode}>Днем машин много, но ночью машин нет.</Translation>
         </div>
 
@@ -848,9 +868,15 @@ const Basic = ({ mode }) => {
         </div>
 
         <div className="row">
-          <Expr>다음, 뒤 после</Expr>
-          <Example mode={mode}>?</Example>
-          <Translation mode={mode}>?</Translation>
+          <Expr>V-(으)ㄴ 다음에 аналог 후</Expr>
+          <Example mode={mode}>승규는 대학을 졸업한 다음에 군대에 갔다.</Example>
+          <Translation mode={mode}>Сынгю, закончив университет, пошел в армию.</Translation>
+        </div>
+
+        <div className="row">
+          <Expr>V-(으)ㄴ 뒤에 аналог 후</Expr>
+          <Example mode={mode}>홍보를 한 뒤에 사람들이 점차 많이 오기 시작했다.</Example>
+          <Translation mode={mode}>После объявления люди постепенно начали приходить.</Translation>
         </div>
 
         <div className="row">
@@ -860,7 +886,7 @@ const Basic = ({ mode }) => {
         </div>
 
         <div className="row">
-          <Expr>V-아/어서 нет прош времени</Expr>
+          <Expr>V-아/어서 (без прош времени)</Expr>
           <Example mode={mode}>바나나를 까서 먹었어요</Example>
           <Translation mode={mode}>Почистил банан и съел.</Translation>
         </div>
@@ -1031,7 +1057,7 @@ const Basic = ({ mode }) => {
         </div>
 
         <div className="row">
-          <Expr>V-고 싶어하다</Expr>
+          <Expr>V-고 싶어하다 про 3-х лиц</Expr>
           <Example mode={mode}>에릭 씨는 자동차를 사고 싶어해요</Example>
           <Translation mode={mode}>Эрик хочет купить авто</Translation>
         </div>
@@ -1044,21 +1070,21 @@ const Basic = ({ mode }) => {
 
         <div className="row">
           <Expr>-았/었으면 하다 хотелось бы (но меньше)</Expr>
-          <Example mode={mode}>?</Example>
-          <Translation mode={mode}>?</Translation>
+          <Example mode={mode}>제 전공이 경제학이니까 경제와 관련된 일을 했으면 합니다.</Example>
+          <Translation mode={mode}>Моя специальность - экономика, поэтому хотелось бы делать работу, связанную с экономикой.</Translation>
         </div>
 
-        <h3>9. Reasons and Causes</h3>
+        <h3>9. Причина и повод</h3>
         <div className="row">
           <Expr>A/V-아/어서 не в командах и предложениях, нет суф-са прошлого времени</Expr>
-          <Example mode={mode}>그 옷은작아서 못 입어요</Example>
+          <Example mode={mode}>그 옷은 작아서 못 입어요</Example>
           <Translation mode={mode}>Эта одежда мала, не надеть</Translation>
         </div>
 
         <div className="row">
-          <Expr>Связка 아라(서)</Expr>
-          <Example mode={mode}>?</Example>
-          <Translation mode={mode}>?</Translation>
+          <Expr>Связка (이)라(서)</Expr>
+          <Example mode={mode}>여자 친구 생일이라서 선물을사야 돼요.</Example>
+          <Translation mode={mode}>У подруги д/р, поэтому нужно купить подарок.</Translation>
         </div>
 
         <div className="row">
@@ -1070,41 +1096,41 @@ const Basic = ({ mode }) => {
         <div className="row">
           <Expr>N 때문에</Expr>
           <Example mode={mode}>눈 때문에 길이 미끄러워요.</Example>
-          <Translation mode={mode}>Из-за снега дороги мокрые</Translation>
+          <Translation mode={mode}>Из-за снега дороги скользкие.</Translation>
         </div>
 
         <div className="row">
           <Expr>A/V-기 때문에</Expr>
           <Example mode={mode}>가고 싶지만 아르바이트를 하기 때문에 못 가요.</Example>
-          <Translation mode={mode}>Хочу пойти, но работую, пойти не могу</Translation>
+          <Translation mode={mode}>Хочу пойти, но работую, пойти не могу.</Translation>
         </div>
 
-        <h3>10. Making Requests and Assisting</h3>
+        <h3>10. Просьба и помощь</h3>
         <div className="row">
-          <Expr>V-아/어 주세요?</Expr>
+          <Expr>V-아/어 주세요? (+좀) услуга говорящему</Expr>
           <Example mode={mode}>문 좀 닫아 주세요.</Example>
-          <Translation mode={mode}>Закройте окно</Translation>
+          <Translation mode={mode}>Закройте окно.</Translation>
         </div>
 
         <div className="row">
-          <Expr>V-아/어 주시겠어요?</Expr>
+          <Expr>V-아/어 주시겠어요? услуга говорящему</Expr>
           <Example mode={mode}>사진 좀 찍어 주시겠어요?</Example>
           <Translation mode={mode}>Сделайте фото (для меня)</Translation>
         </div>
 
         <div className="row">
-          <Expr>V-아/어 줄게요?</Expr>
-          <Example mode={mode}>제가도와 드릴게요.</Example>
-          <Translation mode={mode}>Позволь помочь тебе</Translation>
+          <Expr>V-아/어 줄게요 (드릴게)? предложение услуги</Expr>
+          <Example mode={mode}>제가 도와 드릴게요.</Example>
+          <Translation mode={mode}>Позволь помочь тебе.</Translation>
         </div>
 
         <div className="row">
-          <Expr>V-아/어 줄까요?</Expr>
+          <Expr>V-아/어 줄까요? предложение услуги</Expr>
           <Example mode={mode}>우산이 두 개 있는데 빌려 줄까요?</Example>
           <Translation mode={mode}>Здесь 2 зонта, отдолжить вам?</Translation>
         </div>
 
-        <h3>11. Trying New Things and Experiences</h3>
+        <h3>11. Попытка нового и проба</h3>
         <div className="row">
           <Expr>V-아/어 보다 Пробовать</Expr>
           <Example mode={mode}>아/어 보다  갈비를 먹어 봤어요?</Example>
@@ -1112,18 +1138,18 @@ const Basic = ({ mode }) => {
         </div>
 
         <div className="row">
-          <Expr>V-(으)ㄴ 적이 있다/없다 Иметь опыт</Expr>
+          <Expr>V-(으)ㄴ 적이 있다/없다 Иметь опыт ...</Expr>
           <Example mode={mode}>인도 영화를 본 적이 있어요.</Example>
           <Translation mode={mode}>Я видел индийское кино (как-то).</Translation>
         </div>
 
         <div className="row">
-          <Expr>V-(으)ㄴ 적이 없다 Никогда не делать</Expr>
+          <Expr>V-(으)ㄴ 적이 없다 Никогда не ...</Expr>
           <Example mode={mode}>회사에 지각한 적이 없어요.</Example>
           <Translation mode={mode}>Никогда не опаздывал на работу.</Translation>
         </div>
 
-        <h3>12. Asking Opinions and Making Suggestions</h3>
+        <h3>12. Запрос мнения и делание предложения.</h3>
         <div className="row">
           <Expr>V-(으)ㄹ까요? предложение к слушателю сделать вместе</Expr>
           <Example mode={mode}>같이 농구할까요? </Example>
@@ -1131,8 +1157,8 @@ const Basic = ({ mode }) => {
         </div>
 
         <div className="row">
-          <Expr>V-(으)ㄹ까요? спросить мнение слушателя</Expr>
-          <Example mode={mode}>창문을열까요?</Example>
+          <Expr>V-(으)ㄹ까요? спросить мнение слушателя (делает говорящий)</Expr>
+          <Example mode={mode}>창문을 열까요?</Example>
           <Translation mode={mode}>Мне открыть окно?</Translation>
         </div>
 
@@ -1154,7 +1180,7 @@ const Basic = ({ mode }) => {
           <Translation mode={mode}>Do you want to go hiking?</Translation>
         </div>
 
-        <h3>13. Intentions and Plans</h3>
+        <h3>13. Намерения и планы</h3>
         <div className="row">
           <Expr>A/V-겠어요 ① планы говорящего</Expr>
           <Example mode={mode}>제가 출장을 가겠습니다.</Example>
@@ -1192,7 +1218,7 @@ const Basic = ({ mode }) => {
           <Translation mode={mode}>Утро, проснувшись, был подарок.</Translation>
         </div>
 
-        <h3>15. Purpose and Intention</h3>
+        <h3>15. Цель и намерение</h3>
         <div className="row">
           <Expr>V-(으)러 가다/오다 с глаголами движения</Expr>
           <Example mode={mode}>옷을 사러 동대문 시장에 가요.</Example>
@@ -1233,7 +1259,7 @@ const Basic = ({ mode }) => {
         <div className="row">
           <Expr>A/V-(으)면 условие</Expr>
           <Example mode={mode}>컴퓨터를 많이 하면 눈이 아파요. </Example>
-          <Translation mode={mode}>Если используешь много компьютер, то болят глаза.</Translation>
+          <Translation mode={mode}>Если использовть компьютер много, то болят глаза.</Translation>
         </div>
 
         <div className="row">
@@ -1501,38 +1527,38 @@ const Basic = ({ mode }) => {
 
         <h3>ㄹ</h3>
         <div className="row">
-          <Expr>деепр</Expr>
+          <Expr>2-я форма глагола</Expr>
           <Example mode={mode}>열어</Example>
           <Translation mode={mode}>открываю (веж. неофиц.)</Translation>
         </div>
 
         <div className="row">
-          <Expr></Expr>
+          <Expr>Веж.-офиц. стиль</Expr>
           <Example mode={mode}>엽니다</Example>
           <Translation mode={mode}>окрываю (веж. офиц)</Translation>
         </div>
 
         <div className="row">
-          <Expr></Expr>
+          <Expr>으(세)</Expr>
           <Example mode={mode}>여세요</Example>
           <Translation mode={mode}>откройте, пжл</Translation>
         </div>
 
         <div className="row">
-          <Expr></Expr>
+          <Expr>Не 으(면), 으(려)</Expr>
           <Example mode={mode}>알려고</Example>
           <Translation mode={mode}>дать знать и</Translation>
         </div>
 
         <div className="row">
-          <Expr></Expr>
+          <Expr>Простой стиль</Expr>
           <Example mode={mode}>열라</Example>
           <Translation mode={mode}>открой</Translation>
         </div>
 
         <h3>ㅂ</h3>
         <div className="row">
-          <Expr>деепр</Expr>
+          <Expr>деепр ㅂ -> 우</Expr>
           <Example mode={mode}>추워</Example>
           <Translation mode={mode}>холодно</Translation>
         </div>
@@ -1544,69 +1570,70 @@ const Basic = ({ mode }) => {
         </div>
 
         <div className="row">
-          <Expr>если суфф (перед 으 связкой)</Expr>
+          <Expr>если суфф (перед 으 связкой: 으(세), 으(면), (으)오)</Expr>
           <Example mode={mode}>쉬우면</Example>
           <Translation mode={mode}>если легкий</Translation>
         </div>
 
         <div className="row">
-          <Expr>돕다 곱다</Expr>
+          <Expr>돕다 곱다: ㅂ -> 오</Expr>
           <Example mode={mode}>도와</Example>
           <Translation mode={mode}>помогая</Translation>
         </div>
 
         <h3>ㄷ</h3>
         <div className="row">
-          <Expr></Expr>
+          <Expr>ㄷ->ㄹ перед гласными</Expr>
           <Example mode={mode}>걸어</Example>
           <Translation mode={mode}>идя пешком</Translation>
         </div>
 
         <div className="row">
-          <Expr>르 а/о</Expr>
+          <Expr>아</Expr>
           <Example mode={mode}>빨라</Example>
           <Translation mode={mode}>быстрый (деепр)</Translation>
         </div>
 
         <div className="row">
-          <Expr>другие</Expr>
+          <Expr>другие гласные</Expr>
           <Example mode={mode}>불러</Example>
           <Translation mode={mode}>зовя</Translation>
         </div>
 
         <h3>ㅎ</h3>
         <div className="row">
-          <Expr>деепр</Expr>
-          <Example mode={mode}>노래</Example>
-          <Translation mode={mode}>желтый</Translation>
+          <Expr>деепр -ㅎ, ㅓ -> ㅐ</Expr>
+          <Example mode={mode}>그래</Example>
+          <Translation mode={mode}>Таким образом</Translation>
         </div>
 
         <div className="row">
           <Expr>если суфф (перед 으 связкой)</Expr>
           <Example mode={mode}>노라면</Example>
-          <Translation mode={mode}>если желтый</Translation>
+          <Translation mode={mode}>Если желтый</Translation>
         </div>
 
+        <h3>ㅅ</h3>
         <div className="row">
-          <Expr>ㅅ</Expr>
+          <Expr>-ㅅ</Expr>
           <Example mode={mode}>나아</Example>
           <Translation mode={mode}>быть лучше</Translation>
         </div>
 
         <div className="row">
-          <Expr></Expr>
+          <Expr>ㅓ</Expr>
           <Example mode={mode}>저어</Example>
           <Translation mode={mode}>перемешивать</Translation>
         </div>
 
         <div className="row">
-          <Expr></Expr>
+          <Expr>Перед (으)</Expr>
           <Example mode={mode}>저으면</Example>
           <Translation mode={mode}>если перемешивать</Translation>
         </div>
 
         <div className="row">
-          <Expr></Expr>
+          <Expr>Прич-е прошлое</Expr>
           <Example mode={mode}>저은</Example>
           <Translation mode={mode}>перемешенный</Translation>
         </div>
@@ -1623,7 +1650,7 @@ const BasicList =() => {
   <>
     <div className='container'>
       <ModeControls setMode = {setMode} mode = {mode} />
-      <div id='Page' className='m3'>
+      <div id='Page' className='m-3'>
         <Basic mode = {mode}/>
       </div>
     </div>

@@ -1,0 +1,21 @@
+
+.style-table {
+  border: 1px solid #dee2e6;
+}
+
+.style-table tr, .style-table td {
+  border: 1px solid #dee2e6;
+  padding: 0.25em;
+  margin: 0;
+}
+
+
+.nested-table {
+  border-width: 0px !important;
+}
+
+.nested-table tr, .nested-table td {
+  border-width: 0px;
+  padding: 0.1em;
+  margin: 0.1em;
+}

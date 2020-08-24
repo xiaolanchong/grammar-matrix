@@ -1,5 +1,5 @@
 import React from "react"
-import './BasicList.css'
+import './Ui.css'
 
 const Mode = Object.freeze({
       ShowAll: 1,

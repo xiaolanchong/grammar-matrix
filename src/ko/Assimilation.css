@@ -1,0 +1,52 @@
+
+table {
+   /*border-collapse: collapse;
+   border-spacing: 0;*/
+   border: 1px solid #cccccc;
+   padding: 10px;
+}
+
+td.split{
+  font-weight: bold;
+  padding: 0px 10px;
+  border: 1px solid #cccccc;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(49%, white), color-stop(50%, #cccccc), color-stop(51%, white));
+  background-image: -webkit-linear-gradient(top right, white 49%, #cccccc 50%, white 51%);
+  background-image: -o-linear-gradient(top right, white 49%, #cccccc 50%, white 51%);
+  background-image: linear-gradient(to bottom left, white 49%, #cccccc 50%, white 51%);
+}
+
+td .c1 {
+    -webkit-transform: translate(10px,-1px);
+        -ms-transform: translate(10px,-1px);
+            transform: translate(10px,-1px);
+}
+
+td .c2 {
+    -webkit-transform: translate(-10px,1px);
+        -ms-transform: translate(-10px,1px);
+            transform: translate(-10px,1px);
+}
+
+td {
+  padding: 5px;
+  border: 1px solid #cccccc;
+}
+
+.hdr {
+  font-weight: normal;
+  font-size: 150%;
+}
+
+.duplication {
+  background-color: LightBlue;
+}
+
+.emphasis {
+  font-weight: bold;
+  font-size: 125%;
+}
+
+.vocalization {
+  background-color: LightGreen;
+}
