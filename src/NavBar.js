@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBar = () => 
   <>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <span className="navbar-brand">
         <img src={`${process.env.PUBLIC_URL}/logo.png`} width="30" height="30" alt="" />
       </span>

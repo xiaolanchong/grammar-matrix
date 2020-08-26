@@ -660,7 +660,7 @@ const Intermediate = ({ mode }) =>
     </div>
 
     <h3>Условие</h3>
-    <h4>01 -아/어야 необходимое условие</h4>
+    <h4>1 -아/어야 необходимое условие</h4>
     <div className="row">
       <Expr></Expr>
       <Example mode={mode}>이번 연구 결과가 좋아야 계속해서 다른 연구를 할 수 있어요.</Example>
@@ -678,7 +678,7 @@ const Intermediate = ({ mode }) =>
     </div>
     
     
-    <h4>02 -거든 условие</h4>
+    <h4>2 -거든 условие</h4>
     <div className="row">
       <Expr>Если .., то (далее намерение, предложение, приказ говорящего)</Expr>
       <Example mode={mode}>바쁘지 않거든 잠깐 만납시다.</Example>
@@ -686,7 +686,7 @@ const Intermediate = ({ mode }) =>
     </div>
 
     <h3>Выражения доп. информации</h3>
-    <h4>01 -(으)ㄹ 뿐(만) 아니라</h4>
+    <h4>1 -(으)ㄹ 뿐(만) 아니라</h4>
     <div className="row">
       <Expr>Обе части утверждения или отрицания.</Expr>
       <Example mode={mode}>지하철은 시간을 정확하게 지켜줄 뿐 아니라 편리해서 자주 이용합니 다.</Example>
@@ -698,33 +698,55 @@ const Intermediate = ({ mode }) =>
       <Translation mode={mode}>Джая не только красива, но и характером хороша (добрая).</Translation>
     </div>
     
-    <h4>02 -(으)ㄴ/는 데다가</h4>
+    <h4>2 -(으)ㄴ/는 데다가</h4>
     <div className="row">
       <Expr></Expr>
-      <Example mode={mode}></Example>
+      <Example mode={mode}>그 백화점은 값이 비싼 데다가 질도 별로 안 좋아서 저는 거의 안 가요.</Example>
       <Translation mode={mode}></Translation>
     </div>
-    <h4>03 조차</h4>
     <div className="row">
-      <Expr></Expr>
-      <Example mode={mode}></Example>
-      <Translation mode={mode}></Translation>
+      <Expr>에다가 в дополнение</Expr>
+      <Example mode={mode}>이 종이 에다가 이름과 이메일 주소를 써 주시기 바랍니다.</Example>
+      <Translation mode={mode}>На этой бумаге к тому же напишите имя и адрес.</Translation>
     </div>
-    <h4>04 만 해도</h4>
+    <h4>3 조차</h4>
     <div className="row">
-      <Expr></Expr>
-      <Example mode={mode}></Example>
-      <Translation mode={mode}></Translation>
+      <Expr>"Даже", худший случай</Expr>
+      <Example mode={mode}>더운 날씨에 에어컨조차 고장이 나 버려서 정말 죽겠어요.</Example>
+      <Translation mode={mode}>В такую жару даже кондиционер сломался, действительно невыносимо.</Translation>
+    </div>
+    <div className="row">
+      <Expr>Часто с 은커녕 "какой там"</Expr>
+      <Example mode={mode}>우리 엄마는 해외여행 은커녕 제주도조차 못 가 보셨어요.</Example>
+      <Translation mode={mode}>Мама даже на Чеджудо не ездила, какая там заграница.</Translation>
+    </div>
+    <div className="row">
+      <Expr>-(으)ㄹ 수조차 없어요</Expr>
+      <Example mode={mode}>다리가 너무 아파서 일어설 수조차 없어요.</Example>
+      <Translation mode={mode}>Ноги болят, даже встать не могу.</Translation>
+    </div>
+    
+    <h4>4 만 해도</h4>
+    <div className="row">
+      <Expr>Пример пред. необычной ситуации.</Expr>
+      <Example mode={mode}>요즘은 취직하기가 어려워요. 제 동생만 해도 2년째 직장을 못 구하고 있거든요.</Example>
+      <Translation mode={mode}>В последние дни устроиться на работу трудно. Даже мой мл. брат ищет работу 2-й год.</Translation>
     </div>
 
     <h3>Действие во время другого действия</h3>
-    <h4>01 -는 길에</h4>
+    <h4>1 -는 길에</h4>
     <div className="row">
-      <Expr></Expr>
-      <Example mode={mode}></Example>
-      <Translation mode={mode}></Translation>
+      <Expr>По пути (физич. перемещение)</Expr>
+      <Example mode={mode}>퇴근하는 길에 지하철에서 우연히 친구를 만났어요.</Example>
+      <Translation mode={mode}>По пути с работы в метро встретил друга.</Translation>
     </div>
-    <h4>02 -다가</h4>
+    <div className="row">
+      <Expr>-는 도중에 нет ограничение на тип глагола</Expr>
+      <Example mode={mode}>일하는 도중에 컴퓨터가 꺼져 버렸어요. </Example>
+      <Translation mode={mode}>По среди работы сломался компьютер.</Translation>
+    </div>
+    
+    <h4>2 -다가</h4>
     <div className="row">
       <Expr></Expr>
       <Example mode={mode}></Example>

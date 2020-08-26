@@ -9,7 +9,7 @@ h3 {
 }
 
 .row:nth-child(even) { 
-  background-color: #eeeeee;
+  background-color: #444;
 }
 
 .text-expr {

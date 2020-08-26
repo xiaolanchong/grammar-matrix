@@ -5,7 +5,6 @@ import BasicList from './ko/BasicList.js'
 import IntermediateList from './ko/IntermediateList.js'
 import Assimilation from './ko/Assimilation.js'
 import StyleTable from './ko/StyleTable.js'
-      
 
 
 function getLocationParams(urlLine) {
