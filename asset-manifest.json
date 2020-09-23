@@ -1,27 +1,24 @@
 {
   "files": {
-    "main.css": "/grammar-matrix/static/css/main.4678ec94.chunk.css",
-    "main.js": "/grammar-matrix/static/js/main.ca03bf5f.chunk.js",
-    "main.js.map": "/grammar-matrix/static/js/main.ca03bf5f.chunk.js.map",
+    "main.css": "/grammar-matrix/static/css/main.49a7067f.chunk.css",
+    "main.js": "/grammar-matrix/static/js/main.962926e9.chunk.js",
+    "main.js.map": "/grammar-matrix/static/js/main.962926e9.chunk.js.map",
     "runtime-main.js": "/grammar-matrix/static/js/runtime-main.084f23c6.js",
     "runtime-main.js.map": "/grammar-matrix/static/js/runtime-main.084f23c6.js.map",
-    "static/css/2.f3cffc9e.chunk.css": "/grammar-matrix/static/css/2.f3cffc9e.chunk.css",
-    "static/js/2.77962b2c.chunk.js": "/grammar-matrix/static/js/2.77962b2c.chunk.js",
-    "static/js/2.77962b2c.chunk.js.map": "/grammar-matrix/static/js/2.77962b2c.chunk.js.map",
+    "static/js/2.192b5a1e.chunk.js": "/grammar-matrix/static/js/2.192b5a1e.chunk.js",
+    "static/js/2.192b5a1e.chunk.js.map": "/grammar-matrix/static/js/2.192b5a1e.chunk.js.map",
     "index.html": "/grammar-matrix/index.html",
-    "precache-manifest.1b1e2a4f4cc44a995fca77311a03c043.js": "/grammar-matrix/precache-manifest.1b1e2a4f4cc44a995fca77311a03c043.js",
+    "precache-manifest.6ae4947b6d5731a2c5060cfb0c9acf76.js": "/grammar-matrix/precache-manifest.6ae4947b6d5731a2c5060cfb0c9acf76.js",
     "service-worker.js": "/grammar-matrix/service-worker.js",
-    "static/css/2.f3cffc9e.chunk.css.map": "/grammar-matrix/static/css/2.f3cffc9e.chunk.css.map",
-    "static/css/main.4678ec94.chunk.css.map": "/grammar-matrix/static/css/main.4678ec94.chunk.css.map",
-    "static/js/2.77962b2c.chunk.js.LICENSE.txt": "/grammar-matrix/static/js/2.77962b2c.chunk.js.LICENSE.txt",
+    "static/css/main.49a7067f.chunk.css.map": "/grammar-matrix/static/css/main.49a7067f.chunk.css.map",
+    "static/js/2.192b5a1e.chunk.js.LICENSE.txt": "/grammar-matrix/static/js/2.192b5a1e.chunk.js.LICENSE.txt",
     "static/media/Chevron2.e5ba4f95.svg": "/grammar-matrix/static/media/Chevron2.e5ba4f95.svg",
     "static/media/Chevron3.f9eaae25.svg": "/grammar-matrix/static/media/Chevron3.f9eaae25.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.084f23c6.js",
-    "static/css/2.f3cffc9e.chunk.css",
-    "static/js/2.77962b2c.chunk.js",
-    "static/css/main.4678ec94.chunk.css",
-    "static/js/main.ca03bf5f.chunk.js"
+    "static/js/2.192b5a1e.chunk.js",
+    "static/css/main.49a7067f.chunk.css",
+    "static/js/main.962926e9.chunk.js"
   ]
 }

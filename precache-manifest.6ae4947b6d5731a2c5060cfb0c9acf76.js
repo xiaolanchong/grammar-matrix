@@ -1,27 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f0e1b7004514fc8e90e2c551e0461214",
+    "revision": "801c07f89e54e99421f61cc66c8ecd7f",
     "url": "/grammar-matrix/index.html"
   },
   {
-    "revision": "c5379cda19736bc019fd",
-    "url": "/grammar-matrix/static/css/2.f3cffc9e.chunk.css"
+    "revision": "f6852d773de3fc6eed90",
+    "url": "/grammar-matrix/static/css/main.49a7067f.chunk.css"
   },
   {
-    "revision": "505066c009b239156521",
-    "url": "/grammar-matrix/static/css/main.4678ec94.chunk.css"
-  },
-  {
-    "revision": "c5379cda19736bc019fd",
-    "url": "/grammar-matrix/static/js/2.77962b2c.chunk.js"
+    "revision": "016677da78a29b98319e",
+    "url": "/grammar-matrix/static/js/2.192b5a1e.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/grammar-matrix/static/js/2.77962b2c.chunk.js.LICENSE.txt"
+    "url": "/grammar-matrix/static/js/2.192b5a1e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "505066c009b239156521",
-    "url": "/grammar-matrix/static/js/main.ca03bf5f.chunk.js"
+    "revision": "f6852d773de3fc6eed90",
+    "url": "/grammar-matrix/static/js/main.962926e9.chunk.js"
   },
   {
     "revision": "bd1f903b1b96699eee65",
